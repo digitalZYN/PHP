@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task LIst</title>
+        <br>---------------------------------------------------<br>
+        Martine Hernandez<br>
+        PHP<br>
+        Task List<br>
+        A task list program<br>
+        ---------------------------------------------------<br>
+        <h1>Task List</h1>
+        <style>
+            body {
+                color: white;
+                background-color: black;
+            }
+
+            .input {
+                width: 200px;
+                clear: both;
+            }
+
+            .input input {
+                width: 100%;
+                clear: both;
+            }
+
+            label, input {
+                display: block;
+            }
+
+            label {
+                margin-bottom: 20px;
+            }
+
+            table,th, td {
+                padding: 5px;
+                border-spacing: 15px;
+                text-align: left;
+            }
+        </style>
+    </head>
+
+    <div>
+<body>
+
+<div>
+    <form name="newTask" action="tasklist.php" method="post">
+        <label>
+            Task Name:<input type="text" name="taskName" required="required">
+        </label>
+        <label>
+            Task Description:<br><textarea name="taskDescription" cols="60" rows="5" required="required"></textarea>
+        </label>
+        <input type="submit" name="newTaskSubmit" value="Submit">
+    </form>
+</div>
+
+</head>
+<body>
